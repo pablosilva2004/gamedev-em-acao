@@ -1,0 +1,3 @@
+Vamos tentar utilizar sempre o padrão de organização, cada coisa na sua pasta, se tiver dificuldades, 
+entre em contato conosco pelo Discord, a pasta "projeto" é a pasta do desenvolvimento 
+do jogo em si (dentro da engine)

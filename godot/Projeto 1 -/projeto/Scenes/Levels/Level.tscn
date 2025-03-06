@@ -1,0 +1,85 @@
+[gd_scene load_steps=12 format=3 uid="uid://cjeps01kqna2g"]
+
+[ext_resource type="Texture2D" uid="uid://dl1yb60l55f86" path="res://icon.svg" id="1_1f8v7"]
+[ext_resource type="PackedScene" uid="uid://d1g5x24esv2w4" path="res://Scenes/Objects/player.tscn" id="1_xequ6"]
+[ext_resource type="PackedScene" uid="uid://br5cko3b6fni2" path="res://Scenes/Objects/Car Uno.tscn" id="3_16hsn"]
+[ext_resource type="PackedScene" uid="uid://c0lfwwm3olybd" path="res://Scenes/Objects/mesa_com_radio.tscn" id="4_ex1rp"]
+[ext_resource type="PackedScene" uid="uid://bsugmlksr6loq" path="res://Scenes/Objects/Car Uno2.tscn" id="5_tucg4"]
+[ext_resource type="PackedScene" uid="uid://bywmkqrto0lyj" path="res://Scenes/Objects/Car Brasilia.tscn" id="6_1qpw2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ijwlf"]
+font_size = 9
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7qeo"]
+size = Vector2(20, 350)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnqcn"]
+size = Vector2(20, 350)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xc8h"]
+size = Vector2(450, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_loprk"]
+size = Vector2(450, 20)
+
+[node name="Level" type="Node2D"]
+
+[node name="Chao" type="Sprite2D" parent="."]
+modulate = Color(0.26816, 0.718884, 0.617299, 1)
+position = Vector2(-6, 7)
+scale = Vector2(25, 25)
+texture = ExtResource("1_1f8v7")
+
+[node name="Player" parent="." instance=ExtResource("1_xequ6")]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="Car Uno" parent="Objects" instance=ExtResource("3_16hsn")]
+position = Vector2(-52, -13)
+
+[node name="Label" type="Label" parent="Objects/Car Uno"]
+offset_left = -60.0
+offset_top = 21.0
+offset_right = 60.0
+offset_bottom = 34.0
+text = "[e] para abrir/fechar o capô"
+label_settings = SubResource("LabelSettings_ijwlf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mesa com Radio" parent="Objects" instance=ExtResource("4_ex1rp")]
+position = Vector2(152, -212)
+
+[node name="Car Uno2" parent="Objects" instance=ExtResource("5_tucg4")]
+position = Vector2(173, 52)
+
+[node name="Car Brasilia" parent="Objects" instance=ExtResource("6_1qpw2")]
+position = Vector2(-120, 117)
+
+[node name="Mechanic" type="Node2D" parent="."]
+
+[node name="Edge" type="StaticBody2D" parent="Mechanic"]
+
+[node name="Collision L" type="CollisionShape2D" parent="Mechanic/Edge"]
+position = Vector2(-208, 25)
+shape = SubResource("RectangleShape2D_l7qeo")
+debug_color = Color(0.960784, 0, 0.521569, 0.184314)
+
+[node name="Collision R" type="CollisionShape2D" parent="Mechanic/Edge"]
+position = Vector2(252, 25)
+shape = SubResource("RectangleShape2D_qnqcn")
+debug_color = Color(0.960784, 0, 0.521569, 0.184314)
+
+[node name="Collision U" type="CollisionShape2D" parent="Mechanic/Edge"]
+position = Vector2(23, -162)
+shape = SubResource("RectangleShape2D_0xc8h")
+debug_color = Color(0.960784, 0, 0.521569, 0.184314)
+
+[node name="Collision D" type="CollisionShape2D" parent="Mechanic/Edge"]
+position = Vector2(23, 215)
+shape = SubResource("RectangleShape2D_loprk")
+debug_color = Color(0.960784, 0, 0.521569, 0.184314)

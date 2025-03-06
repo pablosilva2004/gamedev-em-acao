@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bywmkqrto0lyj"]
+
+[ext_resource type="Texture2D" uid="uid://b7toobly3fogm" path="res://Sprites/Brasilia-Sprite.png" id="2_8p0qa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6iy5"]
+size = Vector2(28, 39)
+
+[node name="Car Uno" type="StaticBody2D"]
+scale = Vector2(2, 2)
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_8p0qa")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_o6iy5")

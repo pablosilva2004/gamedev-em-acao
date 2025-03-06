@@ -1,0 +1,3 @@
+A pasta serve para colocar arquivos como:
+
+GDD, arquivos de edição (como do LibreSprite), sons...

@@ -1,0 +1,3 @@
+A pasta serve para colocar os arquivos de backup do projeto, como:
+
+.rar do projeto em outras versões
