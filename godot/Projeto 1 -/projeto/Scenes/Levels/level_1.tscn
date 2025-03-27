@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgi3qtejrno0n"]
+
+[ext_resource type="PackedScene" uid="uid://b0wnkgxm6gn5o" path="res://Scenes/Objects/Player/player.tscn" id="1_4nwq8"]
+[ext_resource type="Texture2D" uid="uid://dl1yb60l55f86" path="res://icon.svg" id="1_017nv"]
+[ext_resource type="Texture2D" uid="uid://4mxacic63l5n" path="res://Sprites/Cars/TattitDrupo/Tattit Drupo Front.png" id="2_bvcwy"]
+[ext_resource type="Texture2D" uid="uid://bg6ahnty6o572" path="res://Sprites/Cars/TattitDrupo/Tattit Drupo Back.png" id="4_0f4ey"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cp7lc"]
+size = Vector2(90, 140)
+
+[node name="Level-1" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+modulate = Color(0.336608, 0.336608, 0.336608, 1)
+scale = Vector2(12, 12)
+texture = ExtResource("1_017nv")
+
+[node name="Player" parent="." instance=ExtResource("1_4nwq8")]
+z_index = 100
+position = Vector2(320, 180)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="Cars" type="Node" parent="Objects"]
+
+[node name="TattitDrupo" type="StaticBody2D" parent="Objects/Cars"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/Cars/TattitDrupo"]
+shape = SubResource("RectangleShape2D_cp7lc")
+
+[node name="TattitDrupoFront" type="Sprite2D" parent="Objects/Cars/TattitDrupo"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_bvcwy")
+
+[node name="TattitDrupo2" type="StaticBody2D" parent="Objects/Cars"]
+position = Vector2(500, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/Cars/TattitDrupo2"]
+shape = SubResource("RectangleShape2D_cp7lc")
+
+[node name="TattitDrupoBack" type="Sprite2D" parent="Objects/Cars/TattitDrupo2"]
+scale = Vector2(2, 2)
+texture = ExtResource("4_0f4ey")
