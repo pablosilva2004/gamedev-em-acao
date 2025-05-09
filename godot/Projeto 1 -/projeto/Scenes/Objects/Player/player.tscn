@@ -1,7 +1,7 @@
 [gd_scene load_steps=44 format=3 uid="uid://b0wnkgxm6gn5o"]
 
 [ext_resource type="Script" path="res://Scripts/Objects/Player/player.gd" id="1_vuqem"]
-[ext_resource type="Texture2D" uid="uid://cgiq1yn6yjflh" path="res://Sprites/Sheets/Carlao/carlao-sheet.png" id="2_g81hb"]
+[ext_resource type="Texture2D" uid="uid://cgiq1yn6yjflh" path="res://Sprites/Sheets/Carlao/carlao-sheet.png" id="2_o01vd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_expro"]
 radius = 20.0
@@ -411,7 +411,7 @@ _animationTree = NodePath("AnimationTree")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(0, -32)
-texture = ExtResource("2_g81hb")
+texture = ExtResource("2_o01vd")
 hframes = 8
 vframes = 14
 
