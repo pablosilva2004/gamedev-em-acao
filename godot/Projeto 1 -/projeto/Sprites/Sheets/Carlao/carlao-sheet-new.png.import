@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8exp0m0ttmte"
-path="res://.godot/imported/Carlao-Sprite.png-f9b4645fb4791cfef07c676a3aba0bf7.ctex"
+uid="uid://lh8efebwu7yj"
+path="res://.godot/imported/carlao-sheet-new.png-1aff93b973b4f90fb4b219c13f0aa5a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Carlao-Sprite.png"
-dest_files=["res://.godot/imported/Carlao-Sprite.png-f9b4645fb4791cfef07c676a3aba0bf7.ctex"]
+source_file="res://Sprites/Sheets/Carlao/carlao-sheet-new.png"
+dest_files=["res://.godot/imported/carlao-sheet-new.png-1aff93b973b4f90fb4b219c13f0aa5a5.ctex"]
 
 [params]
 

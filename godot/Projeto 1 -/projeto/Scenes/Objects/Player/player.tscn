@@ -1,7 +1,7 @@
 [gd_scene load_steps=44 format=3 uid="uid://b0wnkgxm6gn5o"]
 
 [ext_resource type="Script" path="res://Scripts/Objects/Player/player.gd" id="1_vuqem"]
-[ext_resource type="Texture2D" uid="uid://cgiq1yn6yjflh" path="res://Sprites/Sheets/Carlao/carlao-sheet.png" id="2_o01vd"]
+[ext_resource type="Texture2D" uid="uid://lh8efebwu7yj" path="res://Sprites/Sheets/Carlao/carlao-sheet-new.png" id="2_bkv5g"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_expro"]
 radius = 20.0
@@ -194,7 +194,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_o1s0w"]
 resource_name = "walk_l"
-length = 0.35
+length = 0.75
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -211,7 +211,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_g4whe"]
 resource_name = "walk_l_blink"
-length = 0.35
+length = 0.75
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -228,7 +228,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_5e6oq"]
 resource_name = "walk_r"
-length = 0.35
+length = 0.75
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -245,7 +245,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_tynis"]
 resource_name = "walk_r_blink"
-length = 0.35
+length = 0.75
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -411,7 +411,7 @@ _animationTree = NodePath("AnimationTree")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 position = Vector2(0, -32)
-texture = ExtResource("2_o01vd")
+texture = ExtResource("2_bkv5g")
 hframes = 8
 vframes = 14
 
