@@ -1,16 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgi3qtejrno0n"]
+[gd_scene load_steps=8 format=3 uid="uid://bgi3qtejrno0n"]
 
 [ext_resource type="PackedScene" uid="uid://b0wnkgxm6gn5o" path="res://Scenes/Objects/Player/player.tscn" id="1_4nwq8"]
 [ext_resource type="Texture2D" uid="uid://dl1yb60l55f86" path="res://icon.svg" id="1_017nv"]
 [ext_resource type="Texture2D" uid="uid://4mxacic63l5n" path="res://Sprites/Cars/TattitDrupo/Tattit Drupo Front.png" id="2_bvcwy"]
 [ext_resource type="Texture2D" uid="uid://bg6ahnty6o572" path="res://Sprites/Cars/TattitDrupo/Tattit Drupo Back.png" id="4_0f4ey"]
+[ext_resource type="PackedScene" uid="uid://b7s2b5tdyievj" path="res://Scenes/Objects/interact_base.tscn" id="5_sckq2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cp7lc"]
 size = Vector2(90, 140)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6acwl"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
 [node name="Level-1" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.336608, 0.336608, 0.336608, 1)
 scale = Vector2(12, 12)
 texture = ExtResource("1_017nv")
@@ -21,9 +25,9 @@ position = Vector2(320, 180)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
-[node name="Objects" type="Node" parent="."]
+[node name="Objects" type="Node2D" parent="."]
 
-[node name="Cars" type="Node" parent="Objects"]
+[node name="Cars" type="Node2D" parent="Objects"]
 
 [node name="TattitDrupo" type="StaticBody2D" parent="Objects/Cars"]
 
@@ -43,3 +47,20 @@ shape = SubResource("RectangleShape2D_cp7lc")
 [node name="TattitDrupoBack" type="Sprite2D" parent="Objects/Cars/TattitDrupo2"]
 scale = Vector2(2, 2)
 texture = ExtResource("4_0f4ey")
+
+[node name="Interactions" type="Node2D" parent="Objects"]
+
+[node name="InteractBase" parent="Objects/Interactions" instance=ExtResource("5_sckq2")]
+position = Vector2(0, 233)
+
+[node name="InteractBase2" parent="Objects/Interactions" instance=ExtResource("5_sckq2")]
+modulate = Color(0.419608, 0.843137, 0.419608, 1)
+position = Vector2(-94, 140)
+interaction_type = 1
+sprite_texture = SubResource("CompressedTexture2D_6acwl")
+destroy_after_interaction = true
+
+[node name="InteractBase3" parent="Objects/Interactions" instance=ExtResource("5_sckq2")]
+modulate = Color(0.498039, 0.498039, 0.0470588, 1)
+position = Vector2(-197, 257)
+interaction_type = 2

@@ -12,7 +12,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -29,7 +29,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -46,7 +46,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -63,7 +63,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -80,7 +80,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -97,7 +97,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -114,7 +114,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -131,7 +131,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -148,7 +148,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -165,7 +165,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -182,7 +182,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -199,7 +199,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -216,7 +216,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -233,7 +233,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -250,7 +250,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite:frame")
+tracks/0/path = NodePath("Base/Sprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -387,7 +387,6 @@ blend_mode = 1
 sync = true
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_ke40n"]
-graph_offset = Vector2(-246.415, -136.137)
 nodes/final_move_transition/node = SubResource("AnimationNodeTransition_5rasd")
 nodes/final_move_transition/position = Vector2(480, 300)
 nodes/idle/node = SubResource("AnimationNodeBlendSpace2D_ucl0i")
@@ -406,26 +405,31 @@ nodes/walk_final_blend/position = Vector2(220, 500)
 node_connections = [&"final_move_transition", 0, &"idle_final_blend", &"final_move_transition", 1, &"walk_final_blend", &"idle_final_blend", 0, &"idle", &"idle_final_blend", 1, &"idle_blink", &"output", 0, &"final_move_transition", &"walk_final_blend", 0, &"walk", &"walk_final_blend", 1, &"walk_blink"]
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("_animationTree")]
+collision_mask = 30
 script = ExtResource("1_vuqem")
-_animationTree = NodePath("AnimationTree")
+_animationTree = NodePath("Base/AnimationTree")
 
-[node name="Sprite" type="Sprite2D" parent="."]
+[node name="BaseCollision" type="CollisionShape2D" parent="."]
+show_behind_parent = true
+position = Vector2(0, -20)
+shape = SubResource("CapsuleShape2D_expro")
+
+[node name="Base" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite2D" parent="Base"]
 position = Vector2(0, -32)
 texture = ExtResource("2_bkv5g")
 hframes = 8
 vframes = 14
 
-[node name="Collision" type="CollisionShape2D" parent="."]
-show_behind_parent = true
-position = Vector2(0, -20)
-shape = SubResource("CapsuleShape2D_expro")
-
-[node name="Anim" type="AnimationPlayer" parent="."]
+[node name="Anim" type="AnimationPlayer" parent="Base"]
+root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_nxyeg")
 }
 
-[node name="AnimationTree" type="AnimationTree" parent="."]
+[node name="AnimationTree" type="AnimationTree" parent="Base"]
+root_node = NodePath("../..")
 tree_root = SubResource("AnimationNodeBlendTree_ke40n")
 anim_player = NodePath("../Anim")
 parameters/final_move_transition/current_state = "state_idle"
@@ -437,3 +441,27 @@ parameters/idle_final_blend/blend_amount = 0.0
 parameters/walk/blend_position = Vector2(0, 0)
 parameters/walk_blink/blend_position = Vector2(0, 0)
 parameters/walk_final_blend/blend_amount = 0.0
+
+[node name="Interaction" type="Node2D" parent="."]
+
+[node name="InteractionLabel" type="Label" parent="Interaction"]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -38.5
+offset_top = -85.0
+offset_right = 46.5
+offset_bottom = -65.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 10
+text = "Interagir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InteractionRay" type="RayCast2D" parent="Interaction"]
+modulate = Color(0.473156, 0.916702, 1.23215e-05, 1)
+position = Vector2(0, -30)
+collision_mask = 2
+collide_with_areas = true
+collide_with_bodies = false
