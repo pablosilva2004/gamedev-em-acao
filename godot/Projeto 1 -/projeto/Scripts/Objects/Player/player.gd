@@ -106,7 +106,20 @@ func _handle_interaction():
 	# Se o RayCast não estiver colidindo com um objeto interativo, oculta a label de interação
 	_interactionLabel.visible = false
 
+func collect_item(item):
+	if item:
+		print("Player coletou o item!")
+	
+	'''
+	Exemplo
+	
+	if item == "roda":
+		item += 1
+		print("Pegou roda")
+		'''
 
+func start_dialogue():
+	print("Iniciou conversa...")
 
 '''
 

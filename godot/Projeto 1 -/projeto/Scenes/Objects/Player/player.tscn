@@ -387,6 +387,7 @@ blend_mode = 1
 sync = true
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_ke40n"]
+graph_offset = Vector2(-370.128, -5.63086)
 nodes/final_move_transition/node = SubResource("AnimationNodeTransition_5rasd")
 nodes/final_move_transition/position = Vector2(480, 300)
 nodes/idle/node = SubResource("AnimationNodeBlendSpace2D_ucl0i")
